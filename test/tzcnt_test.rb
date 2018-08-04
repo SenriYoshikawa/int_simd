@@ -8,8 +8,8 @@ for i in 0 ..6
     for j in 0..N-1
         result = Benchmark.realtime do
             cnt = 0
-            for j in 0 .. 63
-                if(data[i][j] == 1) then
+            for k in 0 .. 63
+                if(data[i][k] == 1) then
                     break
                 else
                     cnt += 1
